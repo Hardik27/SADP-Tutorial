@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<br>
+<div style="width: 100%;" align="center">
+	Enter Expr:<input type="text" name="exp" id="expression">
+</div>
+<br>
+<br>
+<div style="width: 100%;" align="center">
+<button onclick="calculate()">Submit</button>
+</div>
+<br>
+<br>
+<div style="width: 100%;" align="center">
+<p id="result"></p>
+</div>
+
+<script>
+	function calculate()
+	{	
+        
+		var exp=document.getElementById("expression").value;
+		var res=eval(String(exp));
+		document.getElementById("result").innerHTML=res;
+	}
+</script> 
+
+</body>
+</html>
